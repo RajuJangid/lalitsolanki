@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,300&family=Cairo&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    background-color: rgb(235, 239, 176);
+    height: 600vh;
+    width: 100vw;
+}
+
+.navbar {
+    display: flex;
+    background-color: red;
+    height: 15vh;
+    width: 100vw;
+}
+
+.nav-list {
+    display: flex;
+}
+#bar{
+    display: none;
+}
+.profile1 {
+    color: azure;
+    font-family: 'Cairo', sans-serif;
+    position: absolute;
+    top: 4vh;
+    left: 9vw;
+}
+
+.profile1:hover {
+    color: black;
+    font-weight: bolder;
+}
+
+.photo1 {
+    display: flex;
+    border-radius: 2vh;
+    height: 10vh;
+    width: 5vw;
+    position: absolute;
+    top: 2vh;
+    left: 2vw;
+}
+
+nav ul {
+    height: 6vh;
+    display: flex;
+    justify-content: flex-start;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 2vh;
+    position: relative;
+    top: 6vh;
+    left: 65vw;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+nav ul li a:hover {
+    color: black;
+    font-weight: bold;
+}
+
+.p0 {
+    color: black;
+    font-family: 'Cairo', sans-serif;
+    font-size: 130%;
+    position: absolute;
+    top: 27vh;
+    left: 9vw;
+}
+
+.p1 {
+    height: 10vh;
+    width: 35vw;
+    font-family: 'Cairo', sans-serif;
+    font-size: 110%;
+    position: absolute;
+    top: 53vh;
+    left: 9vw;
+}
+
+#slideshow {
+    overflow: hidden;
+    border: 3px solid rgba(255, 0, 0, 0.322);
+    border-radius: 5px;
+    height: 400px;
+    width: 500px;
+    margin: 0 auto;
+    position: absolute;
+    top: 30vh;
+    right: 10vw;
+}
+
+.slide {
+    float: left;
+    background-color: aliceblue;
+    height: 400px;
+    width: 500px;
+}
+
+.slide-wrapper {
+    width: calc(500px * 4);
+    animation: slide 10s ease infinite;
+}
+
+@keyframes slide {
+    20% {
+        margin-left: 0px;
+    }
+
+    40% {
+        margin-left: calc(-500px * 1);
+    }
+
+    60% {
+        margin-left: calc(-500px * 2);
+    }
+
+    80% {
+        margin-left: calc(-500px * 3);
+    }
+}
+
+.photo2 {
+    height: 65vh;
+    width: 40vw;
+}
+
+
+
+.A1 {
+    color: rgba(58, 36, 159, 0.733);
+    font-family: 'Cairo', sans-serif;
+    position: absolute;
+    top: 110vh;
+    left: 9vw;
+}
+
+.A2 {
+    display: inline-block;
+    width: 70vw;
+    height: auto;
+    font-family: 'Cairo', sans-serif;
+    position: absolute;
+    top: 122vh;
+    left: 9vw;
+}
+
+.C1 {
+    color: rgba(58, 36, 159, 0.733);
+    font-family: 'Cairo', sans-serif;
+    position: absolute;
+    top: 220vh;
+    left: 9vw;
+}
+
+.img-gallery {
+    display: block;
+    float: left;
+    width: 90vw;
+    position: absolute;
+    top: 235vh;
+    left: 5vw;
+}
+
+.D1 {
+    color: rgba(58, 36, 159, 0.733);
+    font-family: 'Cairo', sans-serif;
+    position: absolute;
+    top: 470vh;
+    left: 9vw;
+}
+
+.D2 {
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    top: 500vh;
+    left: 11vw;
+}
+
+.d3 {
+    color: rgb(220, 190, 21);
+    font-family: 'Cairo', sans-serif;
+    position: absolute;
+    top: 520vh;
+    left: 9vw;
+}
+
+.D4 {
+    color: red;
+    font-family: 'Cairo', sans-serif;
+    position: absolute;
+    top: 530vh;
+    left: 9vw;
+}
+
+.D5 {
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    top: 500vh;
+    left: 46vw;
+}
+
+.D6 {
+    color: rgb(220, 190, 21);
+    font-family: 'Cairo', sans-serif;
+    position: absolute;
+    top: 520vh;
+    left: 45vw;
+}
+
+.D7 {
+    color: red;
+    font-family: 'Cairo', sans-serif;
+    position: absolute;
+    top: 530vh;
+    left: 45vw;
+}
+
+.D8 {
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    top: 500vh;
+    left: 78vw;
+}
+
+.D9 {
+    color: rgb(220, 190, 21);
+    font-family: 'Cairo', sans-serif;
+    position: absolute;
+    top: 520vh;
+    left: 79vw;
+}
+
+.D10 {
+    color: red;
+    font-family: 'Cairo', sans-serif;
+    position: absolute;
+    top: 530vh;
+    left: 79vw;
+}
+
+@media only screen and (min-width: 0px) and (max-width:500px) {
+    #bar{
+        display: block;
+        position: absolute;
+        top: 40px;
+        left: 300px;
+    }
+    .photo1 {
+        display: flex;
+        border-radius: 2vh;
+        height: 10vh;
+        width: 16vw;
+        position: absolute;
+        top: 2vh;
+        left: 4vw;
+    }
+
+    .profile1 {
+        color: azure;
+        font-family: 'Cairo', sans-serif;
+        position: absolute;
+        top: 4vh;
+        left: 33vw;
+    }
+
+    .p0 {
+        color: black;
+        font-family: 'Cairo', sans-serif;
+        font-size: 65%;
+        position: absolute;
+        top: 17vh;
+        left: 5vw;
+    }
+
+    .p1 {
+        height: 10vh;
+        width: 90vw;
+        font-family: 'Cairo', sans-serif;
+        font-size: 100%;
+        position: absolute;
+        top: 65vh;
+        left: 9vw;
+    }
+
+    #slideshow {
+        overflow: hidden;
+        border: 3px solid rgba(255, 0, 0, 0.322);
+        border-radius: 5px;
+        height: 200px;
+        width: 300px;
+        margin: 0 auto;
+        position: absolute;
+        top: 32vh;
+        right: 10vw;
+    }
+
+    .slide {
+        float: left;
+        background-color: aliceblue;
+        height: 200px;
+        width: 300px;
+    }
+
+    .slide-wrapper {
+        width: calc(300px * 4);
+        animation: slide 10s ease infinite;
+    }
+
+    @keyframes slide {
+        20% {
+            margin-left: 0px;
+        }
+
+        40% {
+            margin-left: calc(-300px * 1);
+        }
+
+        60% {
+            margin-left: calc(-300px * 2);
+        }
+
+        80% {
+            margin-left: calc(-300px * 3);
+        }
+    }
+    .photo2 {
+        height: 35vh;
+        width: 80vw;
+    }
+
+    .A1 {
+        color: rgba(58, 36, 159, 0.733);
+        font-family: 'Cairo', sans-serif;
+        position: absolute;
+        top: 110vh;
+        left: 30vw;
+    }
+
+    .A2 {
+        display: inline-block;
+        width: 80vw;
+        height: auto;
+        font-family: 'Cairo', sans-serif;
+        position: absolute;
+        top: 122vh;
+        left: 9vw;
+    }
+
+    .C1 {
+        color: rgba(58, 36, 159, 0.733);
+        font-family: 'Cairo', sans-serif;
+        position: absolute;
+        top: 260vh;
+        left: 9vw;
+    }
+
+    .img-gallery {
+        display: block;
+        float: left;
+        width: 50vw;
+        position: absolute;
+        top: 270vh;
+        left: 12vw;
+    }
+
+    .container {
+        background-color: rgb(235, 239, 176);
+        height: 605vh;
+        width: 150vw;
+    }
+
+    .D1 {
+        color: rgba(58, 36, 159, 0.733);
+        font-family: 'Cairo', sans-serif;
+        position: absolute;
+        top: 439vh;
+        left: 25vw;
+    }
+
+    .D2 {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 450vh;
+        left: 15vw;
+    }
+
+    .d3 {
+        color: rgb(220, 190, 21);
+        font-family: 'Cairo', sans-serif;
+        position: absolute;
+        top: 463vh;
+        left: 15vw;
+    }
+
+    .D4 {
+        color: red;
+        font-family: 'Cairo', sans-serif;
+        position: absolute;
+        top: 470vh;
+        left: 15vw;
+    }
+
+    .D5 {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 487vh;
+        left: 15vw;
+    }
+
+    .D6 {
+        color: rgb(220, 190, 21);
+        font-family: 'Cairo', sans-serif;
+        position: absolute;
+        top: 500vh;
+        left: 15vw;
+    }
+
+    .D7 {
+        color: red;
+        font-family: 'Cairo', sans-serif;
+        position: absolute;
+        top: 507vh;
+        left: 15vw;
+    }
+
+    .D8 {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 525vh;
+        left: 15vw;
+    }
+
+    .D9 {
+        color: rgb(220, 190, 21);
+        font-family: 'Cairo', sans-serif;
+        position: absolute;
+        top: 537vh;
+        left: 17vw;
+    }
+
+    .D10 {
+        color: red;
+        font-family: 'Cairo', sans-serif;
+        position: absolute;
+        top: 544vh;
+        left: 15vw;
+    }
+
+#l1{
+    height: 200px;
+    width: 150px;
+position: absolute;
+top: 0vh;
+left:-3vh;
+}
+
+#l2{
+    height: 200px;
+    width: 150px;
+position: absolute;
+top: 0vh;
+left: 20vh;
+}
+#l3{
+    height: 200px;
+    width: 150px;
+position: absolute;
+top: 29vh;
+left: -3vh;
+}
+#l4{
+    height: 200px;
+    width: 150px;
+position: absolute;
+top: 29vh;
+left: 20vh;
+}
+#l5{
+    height: 200px;
+    width: 150px;
+position: absolute;
+top: 58vh;
+left: -3vh;
+}
+
+#l6{
+    height: 200px;
+    width: 150px;
+    position: absolute;
+    top: 58vh;
+left: 20vh;
+}
+
+#l7{
+    height: 200px;
+    width: 150px;
+position: absolute;
+top: 88vh;
+left: -3vh;
+}
+#l8{
+    height: 200px;
+    width: 150px;
+position: absolute;
+top: 88vh;
+left: 20vh;
+}
+#l9{
+    height: 290px;
+    width: 312px;
+position: absolute;
+top: 118vh;
+left: -2vh;
+}
+
+#bar-list{
+    background-color: gray;
+    height: 320px;
+    width: 300px;
+    position: absolute;
+    top: 125px;
+    left: 50px;
+    z-index: 12;
+    visibility: hidden;
+}
+#nav-list-1{
+    flex-direction: column;
+    gap: 60px;
+    z-index: 20;
+    position: absolute;
+    top: 110px;
+    left: -90px;
+    visibility: hidden;
+}
+
+
+}
